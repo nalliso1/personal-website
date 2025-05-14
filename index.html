@@ -1,575 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Nick Allison's Personal Website</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/favicon.ico" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
-    <style>
-      body,
-      section,
-      nav ul li a {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      }
-    </style>
-  </head>
+   <head>
+      <title>Nick Allison's Personal Website</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/png" href="images/favicon.png" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+      <script defer src="main.js"></script>
+      <style>
+         body,
+         section,
+         nav ul li a {
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         }
+      </style>
+   </head>
 
-  <body class="bg-gray-100 font-sans">
-    <!-- Sticky header placed AFTER hero -->
-    <header class="sticky top-0 z-50 w-full h-20 bg-black bg-opacity-70 flex justify-between items-center px-4 -mt-20">
-      <a href="#welcome" class="text-white flex items-center space-x-2">
-        <i class="fas fa-user text-white text-4xl"></i>
-        <span class="text-white text-xl font-bold">Nick Allison</span>
-      </a>
-      <nav>
-        <ul class="flex justify-center items-center list-none">
-          <li class="mx-4"><a href="#about" class="text-white px-4 py-2 rounded hover:bg-gray-300">About</a></li>
-          <li class="mx-4"><a href="#skills" class="text-white px-4 py-2 rounded hover:bg-gray-300">Skills</a></li>
-          <li class="mx-4"><a href="#education" class="text-white px-4 py-2 rounded hover:bg-gray-300">Education</a></li>
-          <li class="mx-4"><a href="#experience" class="text-white px-4 py-2 rounded hover:bg-gray-300">Experience</a></li>
-          <li class="mx-4"><a href="#projects" class="text-white px-4 py-2 rounded hover:bg-gray-300">Projects</a></li>
-          <li class="mx-4"><a href="#contact" class="text-white px-4 py-2 rounded hover:bg-gray-300">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+   <body class="bg-gray-100 font-sans">
 
-    <!-- Hero section with relative positioning -->
-    <section id="welcome" class="relative h-screen bg-cover bg-top text-white" style="background-image: url('images/NickPhoto3.jpg');">
-  <div class="absolute inset-0 flex items-center justify-end">
-    <div class="w-5/6 max-w-lg p-8 rounded text-left mr-[8.333%]"> <!-- ~1/12 margin from right -->
-      <p class="text-4xl mb-2">Hi there! <span class="text-yellow-400">👋</span></p>
-      <h1 class="text-6xl font-bold mb-4">I'm Nick Allison</h1>
-      <p class="text-3xl">Welcome to My Personal Website!</p>
-      <a href="https://www.linkedin.com/in/nick-allison-297138265/" target="_blank" class="mt-4 inline-block">
-        <i class="fab fa-linkedin text-white text-4xl"></i>
-      </a>
-      <a href="https://github.com/nalliso1" target="_blank" class="mt-4 inline-block ml-4">
-        <i class="fab fa-github text-white text-4xl"></i>
-      </a>
-    </div>
-  </div>
-</section>
-
-    <section id="about" class="w-full p-8 bg-gray-100 scroll-mt-20">
-  <div class="max-w-4xl mx-auto text-center"> <!-- Centered layout -->
-    <div class="flex flex-col items-center gap-6"> <!-- Updated to flex column for centering -->
-      <div class="relative">
-        <i class="fas fa-user text-gray-900 text-4xl"></i> <!-- Icon remains here -->
-      </div>
-      <div>
-        <h2 class="text-3xl font-bold mb-6 text-gray-900">About Me</h2>
-        <p class="text-gray-700 text-xl leading-relaxed">
-          I'm a Computer Science student and passionate developer with a problem-solving
-          mindset. I built this website to showcase my background, skills, and projects
-          in a simple, clean way. Whether you're here to connect professionally or just 
-          browsing, I'm glad you stopped by.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section id="skills" class="w-full p-8 bg-white scroll-mt-20">
-  <div class="max-w-5xl mx-auto px-4">
-    <div class="flex items-center gap-4 mb-6">
-      <i class="fas fa-tools text-gray-900 text-4xl"></i>
-      <h2 class="text-3xl font-bold text-gray-900">Skills</h2>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Programming Languages -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-semibold text-black mb-2">💻 Programming Languages & Tools</h3>
-        <ul class="list-disc list-inside text-gray-700 text-sm">
-          <li>Java, Python, C, C++, JavaScript, SQL</li>
-          <li>HTML, CSS, Tailwind CSS</li>
-          <li>Git & GitHub, Bash, LaTeX</li>
-          <li>Android Studio, VS Code, IntelliJ IDEA</li>
-        </ul>
-      </div>
-
-      <!-- Analytical & Technical Strengths -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-semibold text-black mb-2">📈 Analytical & Technical Strengths</h3>
-        <ul class="list-disc list-inside text-gray-700 text-sm">
-          <li>Strong foundation in algorithms, data structures, and system design</li>
-          <li>Experienced in problem-solving and debugging complex code</li>
-          <li>Confident working with mathematical concepts, logic, and optimization</li>
-          <li>Capable of breaking down large problems into manageable components</li>
-        </ul>
-      </div>
-
-      <!-- Interdisciplinary Knowledge -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-semibold text-black mb-2">🎓 Interdisciplinary Background</h3>
-        <ul class="list-disc list-inside text-gray-700 text-sm">
-          <li>Computer Science: Software Engineering, Architecture, Networks, Data Science</li>
-          <li>Business: Marketing, Finance, HR, Communication, Management</li>
-          <li>Engineering & Science: Physics, Chemistry, Design Thinking, CAD</li>
-          <li>Math & Statistics: Calculus, Linear Algebra, Probability & Stats</li>
-        </ul>
-      </div>
-
-      <!-- Soft Skills -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-semibold text-black mb-2">🤝 Soft Skills & Work Ethic</h3>
-        <ul class="list-disc list-inside text-gray-700 text-sm">
-          <li>Clear communicator and team player in both technical and customer-facing roles</li>
-          <li>Proven leadership and initiative in entrepreneurial and academic settings</li>
-          <li>Adaptable and proactive with a hands-on approach to challenges</li>
-          <li>Organized, deadline-driven, and eager to keep learning</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="education" class="w-full p-8 bg-gray-100 scroll-mt-20">
-  <div class="max-w-7xl mx-auto px-4">
-    <div class="flex items-center gap-4 mb-6">
-      <i class="fas fa-graduation-cap text-gray-900 text-4xl"></i>
-      <h2 class="text-3xl font-bold text-gray-900">Education</h2>
-    </div>
-
-    <div class="flex flex-row p-6 rounded-lg gap-4">
-      <!-- University Details -->
-      <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex items-center mb-4">
-          <img src="images/UNBLogo.png" alt="UNB Logo" class="w-20 h-20 mr-4">
-          <div>
-            <h3 class="text-2xl font-semibold text-black">Bachelor of Computer Science</h3>
-            <p class="text-m text-gray-700">University of New Brunswick</p>
-            <p class="text-m text-gray-700">September 2020 - Present</p>
-            <p class="text-m text-gray-700">GPA: 3.5</p>
-          </div>
-        </div>
-        <div class="mt-4">
-          <h4 class="text-lg font-semibold text-black mb-2">Academic Awards</h4>
-          <ul class="list-disc list-inside text-gray-700 text-sm">
-            <li>2020 – 2021 Fletcher Peacock Memorial Scholarship</li>
-            <li>2020 – 2021 UNB Saint John Campus Scholarship</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- High School Details -->
-      <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
-        <div class="flex items-center mb-4">
-          <img src="images/RHSLogo.jpeg" alt="RHS Logo" class="w-26 h-24 mr-4">
-          <div>
-            <h3 class="text-2xl font-semibold text-black">High School Diploma</h3>
-            <p class="text-m text-gray-700">Rothesay High School</p>
-            <p class="text-m text-gray-700">September 2016 - June 2020</p>
-            <p class="text-m text-gray-700">Grade: 95%</p>
-          </div>
-        </div>
-        <div class="mt-4">
-          <h4 class="text-lg font-semibold text-black mb-2">Academic Awards</h4>
-          <ul class="list-disc list-inside text-gray-700 text-sm">
-            <li>2020 Graduated High Honours</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Categorized Courses -->
-<div class="mt-10 overflow-x-auto">
-  <div class="flex gap-8 min-w-max-center gap-4 mb-6">
-    <i class="fas fa-book text-gray-900 text-4xl"></i>
-    <h3 class="text-2xl font-semibold text-black">University Courses</h3>
-  </div>
-
-  <!-- Updated University Courses Section -->
-  <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-4">
-    <!-- Computer Science -->
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-      <h4 class="text-lg font-semibold text-red-600 mb-2">🖥️ Computer Science</h4>
-      <ul class="list-disc list-inside text-gray-700 text-sm">
-        <li>Programming I & II (Java)</li>
-        <li>Programming & Problem Solving</li>
-        <li>Databases</li>
-        <li>Discrete Structures</li>   
-        <li>Software Engineering</li>
-        <li>Computabilitiy and Formal Languages</li>      
-        <li>Machine Level Programming</li>
-        <li>Systems Software Development</li>
-        <li>Data Structures & Algorithms</li>
-        <li>Algorithm Design & Analysis</li>
-        <li>Computer Architecture & Organization</li>
-        <li>Net-Centric Computing</li>
-      </ul>
-    </div>
-
-    <!-- Business & Data -->
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-      <h4 class="text-lg font-semibold text-red-600 mb-2">📊 Business</h4>
-      <ul class="list-disc list-inside text-gray-700 text-sm">
-        <li>How Business Works</li>
-        <li>Microeconomics</li>
-        <li>Accounting for Managers</li>
-        <li>Macroeconomics</li>
-        <li>Business Communications I</li>
-        <li>Applied Management Skills</li>
-        <li>Principles of Marketing</li>
-        <li>Principles of Finance</li>
-        <li>Human Resource Management</li>
-      </ul>
-    </div>
-
-    <!-- Science & Engineering -->
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-      <h4 class="text-lg font-semibold text-red-600 mb-2">🔬 Science & Engineering</h4>
-      <ul class="list-disc list-inside text-gray-700 text-sm">
-        <li>Mechanics I</li>
-        <li>Eng Professional Lecture Series</li>
-        <li>Eng Technical Communication</li>
-        <li>Eng Design & Problem Solving</li>
-        <li>Gen. Physcal & Inorganic Chemistry</li>
-        <li>Gen. Physcal & Inorganic Chemistry Lab</li>
-        <li>Electricity & Magnetism</li>
-        <li>Mechanics for Engineers</li>
-        <li>Computer Aided Design</li>
-        <li>Digital Logic Design</li>        
-      </ul>
-    </div>    
-
-    <!-- Computer Science Electives -->
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-      <h4 class="text-lg font-semibold text-red-600 mb-2">🖥️ Computer Science Electives</h4>
-      <ul class="list-disc list-inside text-gray-700 text-sm">
-        <li>Game Development</li>
-        <li>Mobile App Development</li>
-        <li>Data Science for Big Data Analytics</li>
-        <li>Big Data Systems</li>
-      </ul>
-    </div>
-
-    <!-- Math -->
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-      <h4 class="text-lg font-semibold text-red-600 mb-2">➕ Math & Statistics</h4>
-      <ul class="list-disc list-inside text-gray-700 text-sm">
-        <li>Calculus I & II</li>
-        <li>Linear Algebra</li>
-        <li>Multivariable Calculus</li>
-        <li>Probability & Statistics I & II</li>
-      </ul>
-    </div>
-
-
-<!-- Other Electives -->
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-      <h4 class="text-lg font-semibold text-red-600 mb-2">🌐 Other Electives</h4>
-      <ul class="list-disc list-inside text-gray-700 text-sm">
-        <li>Intro to Psychology</li>
-        <li>Intro to Sociology</li>
-        <li>Communications in French I & II</li>
-      </ul>
-    </div>
-
-  </div>
-</div>
-
-</section>
-
-
-    <section id="experience" class="w-full p-8 bg-white text-white scroll-mt-20">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold mb-10 text-center text-black">Work Experience</h2>
-
-    <!-- Timeline container -->
-    <div class="relative">
-      <!-- Center vertical line -->
-      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-400"></div>
-
-      <!-- Job Entries -->
-      <!-- Each job follows this pattern: -->
-      <!-- Date | Circle | Description -->
-
-      <!-- Job 1 - Right -->
-      <div class="mb-16 flex justify-start relative">
-        <div class="w-1/2 flex justify-end pr-16 items-start mt-10"> <!-- Increased pr-6 to pr-10 -->
-          <div class="text-black text-lg font-medium">
-            May 2025 – Present
-          </div>
-        </div>
-        <div class="absolute left-1/2 transform -translate-x-1/2 top-0 z-10">
-          <div class="w-24 h-24 bg-blue-400 text-white flex items-center justify-center rounded-full text-m font-bold text-center border-4 border-white shadow-sm">
-            Junior<br />Property<br />Manager
-          </div>
-        </div>
-        <div class="w-1/2 pl-16">
-          <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-black">ALTO Property Management, Saint John, NB</h3>
-            <ul class="list-disc list-inside text-gray-700">
-              <li>Facilitated communication between tenants, contractors, and property owners</li>
-              <li>Conducted and scheduled property showings for prospective tenants</li>
-              <li>Assisted with renovations, landscaping, and lawn maintenance</li>
+      <!-- Header -->
+      <header class="sticky top-0 z-50 w-full h-20 bg-black bg-opacity-70 flex justify-between items-center px-4 -mt-20">
+         <a href="#welcome" class="text-white flex items-center space-x-2">
+         <i class="fas fa-user text-white text-2xl"></i>
+         <span class="text-white text-xl font-bold">Nick Allison</span>
+         </a>
+         <nav>
+            <ul class="flex justify-center items-center list-none">
+               <li class="mx-4"><a href="#about" class="text-white px-4 py-2 rounded hover:bg-gray-300">About</a></li>
+               <li class="mx-4"><a href="#skills" class="text-white px-4 py-2 rounded hover:bg-gray-300">Skills</a></li>
+               <li class="mx-4"><a href="#education" class="text-white px-4 py-2 rounded hover:bg-gray-300">Education</a></li>
+               <li class="mx-4"><a href="#experience" class="text-white px-4 py-2 rounded hover:bg-gray-300">Experience</a></li>
+               <li class="mx-4"><a href="#projects" class="text-white px-4 py-2 rounded hover:bg-gray-300">Projects</a></li>
+               <li class="mx-4"><a href="#contact" class="text-white px-4 py-2 rounded hover:bg-gray-300">Contact</a></li>
             </ul>
-          </div>
-        </div>
-      </div>
+         </nav>
+      </header>
 
-      <!-- Job 2 - Left -->
-      <div class="mb-16 flex justify-end relative">
-        <div class="w-1/2 pr-16 text-right">
-          <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-black">Beach Ave Bar and Grill, Vancouver, BC</h3>
-            <ul class="text-left list-disc list-inside text-gray-700">
-              <li>Relocated to Vancouver for the summer to gain new experience</li>
-              <li>Provided customer service and managed reservations, orders, and table assignments</li>
-            </ul>
-          </div>
-        </div>
-        <div class="absolute left-1/2 transform -translate-x-1/2 top-0 z-10">
-          <div class="w-24 h-24 bg-blue-400 text-white flex items-center justify-center rounded-full text-lg font-bold text-center border-4 border-white shadow-sm">
-            Server<br />/ Host
-          </div>
-        </div>
-        <div class="w-1/2 flex justify-start pl-16 items-start mt-10"> <!-- Increased pl-6 to pl-10 -->
-          <div class="text-black text-lg font-medium">
-            May 2024 – August 2024
-          </div>
-        </div>
-      </div>
+      <!-- Welcome section with my photo -->
+      <section id="welcome" class="relative h-screen bg-cover bg-top text-white" style="background-image: url('images/Nick_Allison.jpg');">
+         <div class="absolute inset-0 flex items-center justify-end">
+            <div class="w-5/6 max-w-lg p-8 rounded text-left mr-[8.333%]">
+               <p class="text-4xl mb-2">Hi there <span class="text-yellow-400">👋</span></p>
+               <h1 class="text-6xl font-bold mb-4">I'm Nick Allison</h1>
+               <p class="text-3xl">Welcome to My Personal Website!</p>
+               <a href="https://www.linkedin.com/in/nick-allison-297138265/" target="_blank" class="mt-4 inline-block">
+               <i class="fab fa-linkedin text-white text-4xl"></i>
+               </a>
+               <a href="https://github.com/nalliso1" target="_blank" class="mt-4 inline-block ml-4">
+               <i class="fab fa-github text-white text-4xl"></i>
+               </a>
+            </div>
+         </div>
+      </section>
 
-      <!-- Job 3 - Right -->
-      <div class="mb-16 flex justify-start relative">
-        <div class="w-1/2 flex justify-end pr-16 items-start mt-10"> <!-- Increased pr-6 to pr-10 -->
-          <div class="text-black text-lg font-medium">
-            May 2023 – August 2023            
-          </div>
-        </div>
-        <div class="absolute left-1/2 transform -translate-x-1/2 top-0 z-10">
-          <div class="w-24 h-24 bg-blue-400 text-white flex items-center justify-center rounded-full text-m font-bold text-center border-4 border-white shadow-sm">
-            Junior<br />Property<br />Manager
-          </div>
-        </div>
-        <div class="w-1/2 pl-16">
-          <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-black">ALTO Property Management, Saint John, NB</h3>
-            <ul class="list-disc list-inside text-gray-700">
-              <li>Facilitated communication between tenants, contractors, and property owners</li>
-              <li>Conducted and scheduled property showings for prospective tenants</li>
-              <li>Assisted with renovations, landscaping, and lawn maintenance</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <!-- About Section -->
+      <section id="about" class="w-full p-8 bg-gray-100 scroll-mt-20">
+         <div class="max-w-4xl mx-auto text-center">
+            <div class="flex flex-col items-center gap-6">
+               <div>
+                  <h2 class="text-3xl font-bold mb-6 text-gray-900">About Me</h2>
+                  <p class="text-gray-700 text-xl leading-relaxed">
+                     I'm a final-year Computer Science student from Rothesay with a lifelong interest in problem-solving, algorithms, and building things from the ground up. I’ve always enjoyed working with logic and math, and after considering a few paths, I chose Computer Science — and haven’t looked back since. Throughout my degree, I’ve explored everything from AI and data science to web development and system design, giving me a well-rounded technical skillset. I built this website to share my experience, highlight my projects, and connect with others in the tech world. Whether you’re here to explore or connect professionally, thanks for stopping by!
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
 
-      <!-- Job 4 - Left -->
-      <div class="mb-16 flex justify-end relative">
-        <div class="w-1/2 pr-16 text-right">
-          <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-black">Four Seasons Lawn Maintenance, Rothesay, NB</h3>
-            <ul class="text-left list-disc list-inside text-gray-700">
-              <li>Maintained lawns, gardens, and outdoor spaces by mowing, trimming, and planting to enhance curb appeal</li>
-              <li>Operated landscaping equipment safely and efficiently, ensuring timely completion of tasks in residential and commercial settings</li>
-            </ul>
-          </div>
-        </div>
-        <div class="absolute left-1/2 transform -translate-x-1/2 top-0 z-10">
-          <div class="w-24 h-24 bg-blue-400 text-white flex items-center justify-center rounded-full text-m font-bold text-center border-4 border-white shadow-sm">
-            Landscaper<br />
-          </div>
-        </div>
-        <div class="w-1/2 flex justify-start pl-16 items-start mt-10"> <!-- Increased pl-6 to pl-10 -->
-          <div class="text-black text-lg font-medium">
-            May 2022 – August 2022
-          </div>
-        </div>
-      </div>
+      <!-- Skills Section -->
+      <section id="skills" class="w-full p-8 bg-white scroll-mt-20">
+         <div class="max-w-5xl mx-auto px-4">
+            <div class="flex items-center gap-4 mb-6">
+               <i class="fas fa-tools text-gray-900 text-4xl"></i>
+               <h2 class="text-3xl font-bold text-gray-900">Skills</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-      <!-- Job 5 - Right -->
-      <div class="mb-16 flex justify-start relative">
-        <div class="w-1/2 flex justify-end pr-16 items-start mt-10"> <!-- Increased pr-6 to pr-10 -->
-          <div class="text-black text-lg font-medium">
-            May 2021 – August 2021            
-          </div>
-        </div>
-        <div class="absolute left-1/2 transform -translate-x-1/2 top-0 z-10">
-          <div class="w-24 h-24 bg-blue-400 text-white flex items-center justify-center rounded-full text-lg font-bold text-center border-4 border-white shadow-sm">
-            Junior<br />Engineer<br />
-          </div>
-        </div>
-        <div class="w-1/2 pl-16">
-          <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-black">Debly Enterprises LTD, Saint John, NB</h3>
-            <ul class="list-disc list-inside text-gray-700">
-              <li>Reported to Debly’s Head Engineer, assisting with a variety of engineering tasks and construction planning</li>
-              <li>Primary focus was performing material calculations to develop materials lists for large-scale construction projects in New Brunswick</li>
-              <li>Analyzed large Excel data sets to track and identify efficient and inefficient material usage</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+               <!-- Programming Languages -->
+               <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-black mb-2">💻 Programming Languages & Tools</h3>
+                  <ul class="list-disc list-inside text-gray-700 text-sm">
+                     <li>Java, Python, C, C++, JavaScript, SQL</li>
+                     <li>HTML, CSS, Tailwind CSS</li>
+                     <li>Git & GitHub, Bash, LaTeX</li>
+                     <li>Android Studio, VS Code, IntelliJ IDEA</li>
+                  </ul>
+               </div>
 
-      <!-- Job 6 - Left -->
-      <div class="mb-16 flex justify-end relative">
-        <div class="w-1/2 pr-16 text-right">
-          <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-black">CN Lawn Care | Jersey World, Rothesay, NB</h3>
-            <ul class="text-left list-disc list-inside text-gray-700">
-              <li>Started and operated full-service lawn care business in partnership with a colleague and maintained regular customers throughout the season </li>
-              <li>Started and successfully operated sports jersey resale business with two colleagues</li>
-            </ul>
-          </div>
-        </div>
-        <div class="absolute left-1/2 transform -translate-x-1/2 top-0 z-10">
-          <div class="w-24 h-24 bg-blue-400 text-white flex items-center justify-center rounded-full text-sm font-bold text-center border-4 border-white shadow-sm">
-            Entrepreneur<br />
-          </div>
-        </div>
-        <div class="w-1/2 flex justify-start pl-16 items-start mt-10"> <!-- Increased pl-6 to pl-10 -->
-          <div class="text-black text-lg font-medium">
-            May 2020 – August 2020
-          </div>
-        </div>
-      </div>
+               <!-- Analytical & Technical Strengths -->
+               <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-black mb-2">📈 Analytical & Technical Strengths</h3>
+                  <ul class="list-disc list-outside pl-5 text-gray-700 text-sm">
+                     <li>Strong foundation in algorithms, data structures, and system design</li>
+                     <li>Experienced in problem-solving and debugging complex code</li>
+                     <li>Confident working with mathematical concepts, logic, and optimization</li>
+                     <li>Capable of breaking down large problems into manageable components</li>
+                  </ul>
+               </div>
+               
+               <!-- Interdisciplinary Knowledge -->
+               <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-black mb-2">🎓 Interdisciplinary Background</h3>
+                  <ul class="list-disc list-outside pl-5 text-gray-700 text-sm">
+                     <li>Computer Science: Software Engineering, Architecture, Networks, Data Science</li>
+                     <li>Business: Marketing, Finance, HR, Communication, Management</li>
+                     <li>Engineering & Science: Physics, Chemistry, Design Thinking, CAD</li>
+                     <li>Math & Statistics: Calculus, Linear Algebra, Probability & Stats</li>
+                  </ul>
+               </div>
 
-      <!-- Repeat same structure for jobs 3 to 6 -->
-      <!-- I've skipped rewriting them here for brevity -->
-    </div>
-  </div>
-</section>
+               <!-- Soft Skills -->
+               <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-black mb-2">🤝 Soft Skills & Work Ethic</h3>
+                  <ul class="list-disc list-outside pl-5 text-gray-700 text-sm">
+                     <li>Clear communicator and team player in both technical and customer-facing roles</li>
+                     <li>Proven leadership and initiative in entrepreneurial and academic settings</li>
+                     <li>Adaptable and proactive with a hands-on approach to challenges</li>
+                     <li>Organized, deadline-driven, and eager to keep learning</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
 
 
+      <section id="education" class="w-full p-8 bg-gray-100 scroll-mt-20">
+         <div class="max-w-7xl mx-auto px-4">
+         <div class="flex items-center gap-4 mb-6">
+            <i class="fas fa-graduation-cap text-gray-900 text-4xl"></i>
+            <h2 class="text-3xl font-bold text-gray-900">Education</h2>
+         </div>
+         <div class="flex flex-row p-6 rounded-lg gap-4">
+            <!-- University Details -->
+            <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
+               <div class="flex items-center mb-4">
+                  <img src="images/UNBLogo.png" alt="UNB Logo" class="w-20 h-20 mr-4">
+                  <div>
+                     <h3 class="text-2xl font-semibold text-black">Bachelor of Computer Science</h3>
+                     <p class="text-m text-gray-700">University of New Brunswick</p>
+                     <p class="text-m text-gray-700">September 2020 - Present</p>
+                     <p class="text-m text-gray-700">Cumulative GPA: 3.5, Current Term GPA: 3.9 </p>
+                  </div>
+               </div>
+               <div class="mt-4">
+                  <h4 class="text-lg font-semibold text-black mb-2">Academic Awards</h4>
+                  <ul class="list-disc list-inside text-gray-700 text-sm">
+                     <li>2020 – 2021 Fletcher Peacock Memorial Scholarship</li>
+                     <li>2020 – 2021 UNB Saint John Campus Scholarship</li>
+                  </ul>
+               </div>
+            </div>
+            <!-- High School Details -->
+            <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
+               <div class="flex items-center mb-4">
+                  <img src="images/RHSLogo.jpeg" alt="RHS Logo" class="w-26 h-24 mr-4">
+                  <div>
+                     <h3 class="text-2xl font-semibold text-black">High School Diploma</h3>
+                     <p class="text-m text-gray-700">Rothesay High School</p>
+                     <p class="text-m text-gray-700">September 2016 - June 2020</p>
+                     <p class="text-m text-gray-700">Grade: 95%</p>
+                  </div>
+               </div>
+               <div class="mt-4">
+                  <h4 class="text-lg font-semibold text-black mb-2">Academic Awards</h4>
+                  <ul class="list-disc list-inside text-gray-700 text-sm">
+                     <li>2020 Graduated High Honours</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- Categorized Courses -->
+         <div class="mt-10 overflow-x-auto">
+            <div class="flex gap-8 min-w-max-center gap-4 mb-6">
+               <i class="fas fa-book text-gray-900 text-4xl"></i>
+               <h3 class="text-2xl font-semibold text-black">University Courses</h3>
+            </div>
+            <!-- Updated University Courses Section -->
+            <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-4">
+               <!-- Computer Science -->
+               <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <h4 class="text-lg font-semibold text-red-600 mb-2">🖥️ Computer Science</h4>
+                  <ul class="list-disc list-inside text-gray-700 text-sm">
+                     <li>Programming I & II (Java)</li>
+                     <li>Programming & Problem Solving</li>
+                     <li>Databases</li>
+                     <li>Discrete Structures</li>
+                     <li>Software Engineering</li>
+                     <li>Computabilitiy and Formal Languages</li>
+                     <li>Machine Level Programming</li>
+                     <li>Systems Software Development</li>
+                     <li>Data Structures & Algorithms</li>
+                     <li>Algorithm Design & Analysis</li>
+                     <li>Computer Architecture & Organization</li>
+                     <li>Net-Centric Computing</li>
+                  </ul>
+               </div>
+               <!-- Business & Data -->
+               <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <h4 class="text-lg font-semibold text-red-600 mb-2">📊 Business</h4>
+                  <ul class="list-disc list-inside text-gray-700 text-sm">
+                     <li>How Business Works</li>
+                     <li>Microeconomics</li>
+                     <li>Accounting for Managers</li>
+                     <li>Macroeconomics</li>
+                     <li>Business Communications I</li>
+                     <li>Applied Management Skills</li>
+                     <li>Principles of Marketing</li>
+                     <li>Principles of Finance</li>
+                     <li>Human Resource Management</li>
+                  </ul>
+               </div>
+               <!-- Science & Engineering -->
+               <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <h4 class="text-lg font-semibold text-red-600 mb-2">🔬 Science & Engineering</h4>
+                  <ul class="list-disc list-inside text-gray-700 text-sm">
+                     <li>Mechanics I</li>
+                     <li>Eng Professional Lecture Series</li>
+                     <li>Eng Technical Communication</li>
+                     <li>Eng Design & Problem Solving</li>
+                     <li>Gen. Physcal & Inorganic Chemistry</li>
+                     <li>Gen. Physcal & Inorganic Chemistry Lab</li>
+                     <li>Electricity & Magnetism</li>
+                     <li>Mechanics for Engineers</li>
+                     <li>Computer Aided Design</li>
+                     <li>Digital Logic Design</li>
+                  </ul>
+               </div>
+               <!-- Computer Science Electives -->
+               <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <h4 class="text-lg font-semibold text-red-600 mb-2">🖥️ Computer Science Electives</h4>
+                  <ul class="list-disc list-inside text-gray-700 text-sm">
+                     <li>Game Development</li>
+                     <li>Mobile App Development</li>
+                     <li>Data Science for Big Data Analytics</li>
+                     <li>Big Data Systems</li>
+                  </ul>
+               </div>
+               <!-- Math -->
+               <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <h4 class="text-lg font-semibold text-red-600 mb-2">➕ Math & Statistics</h4>
+                  <ul class="list-disc list-inside text-gray-700 text-sm">
+                     <li>Calculus I & II</li>
+                     <li>Linear Algebra</li>
+                     <li>Multivariable Calculus</li>
+                     <li>Probability & Statistics I & II</li>
+                  </ul>
+               </div>
+               <!-- Other Electives -->
+               <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <h4 class="text-lg font-semibold text-red-600 mb-2">🌐 Other Electives</h4>
+                  <ul class="list-disc list-inside text-gray-700 text-sm">
+                     <li>Intro to Psychology</li>
+                     <li>Intro to Sociology</li>
+                     <li>Communications in French I & II</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="experience" class="w-full p-8 bg-white text-white scroll-mt-20">
+         <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-10 text-center text-black">Work Experience</h2>
+            <!-- Timeline container -->
+            <div class="relative">
+               <!-- Center vertical line -->
+               <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-400"></div>
+               <!-- Job Entries -->
+               <!-- Each job follows this pattern: -->
+               <!-- Date | Circle | Description -->
+               <!-- Job 1 - Right -->
+               <div class="mb-16 flex justify-start relative">
+                  <div class="w-1/2 flex justify-end pr-16 items-start mt-10">
+                     <!-- Increased pr-6 to pr-10 -->
+                     <div class="text-black text-lg font-medium">
+                        May 2025 – Present
+                     </div>
+                  </div>
+                  <div class="absolute left-1/2 transform -translate-x-1/2 top-0 z-10">
+                     <div class="w-24 h-24 bg-blue-400 text-white flex items-center justify-center rounded-full text-m font-bold text-center border-4 border-white shadow-sm">
+                        Junior<br />Property<br />Manager
+                     </div>
+                  </div>
+                  <div class="w-1/2 pl-16">
+                     <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-black">ALTO Property Management, Saint John, NB</h3>
+                        <ul class="list-disc list-outside pl-5 text-gray-700">
+                           <li>Facilitate communication between tenants, contractors, and property owners</li>
+                           <li>Conduct and schedule property showings for prospective tenants</li>
+                           <li>Assist with renovations, landscaping, and lawn maintenance</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- Job 2 - Left -->
+               <div class="mb-16 flex justify-end relative">
+                  <div class="w-1/2 pr-16 text-left">
+                     <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-black">Beach Ave Bar and Grill, Vancouver, BC</h3>
+                        <ul class="list-disc list-outside pl-5 text-gray-700">
+                           <li>Relocated to Vancouver for the summer to gain new experience</li>
+                           <li>Provided customer service and managed reservations, orders, and table assignments</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="absolute left-1/2 transform -translate-x-1/2 top-0 z-10">
+                     <div class="w-24 h-24 bg-blue-400 text-white flex items-center justify-center rounded-full text-lg font-bold text-center border-4 border-white shadow-sm">
+                        Server<br />/ Host
+                     </div>
+                  </div>
+                  <div class="w-1/2 flex justify-start pl-16 items-start mt-10">
+                     <!-- Increased pl-6 to pl-10 -->
+                     <div class="text-black text-lg font-medium">
+                        May 2024 – August 2024
+                     </div>
+                  </div>
+               </div>
+               <!-- Job 3 - Right -->
+               <div class="mb-16 flex justify-start relative">
+                  <div class="w-1/2 flex justify-end pr-16 items-start mt-10">
+                     <!-- Increased pr-6 to pr-10 -->
+                     <div class="text-black text-lg font-medium">
+                        May 2023 – August 2023            
+                     </div>
+                  </div>
+                  <div class="absolute left-1/2 transform -translate-x-1/2 top-0 z-10">
+                     <div class="w-24 h-24 bg-blue-400 text-white flex items-center justify-center rounded-full text-m font-bold text-center border-4 border-white shadow-sm">
+                        Junior<br />Property<br />Manager
+                     </div>
+                  </div>
+                  <div class="w-1/2 pl-16">
+                     <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-black">ALTO Property Management, Saint John, NB</h3>
+                        <ul class="list-disc list-outside pl-5 text-gray-700">
+                           <li>Same responsibilities as current role (see above), including tenant coordination,
+                             property showings, and hands-on support with property projects</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- Job 4 - Left -->
+               <div class="mb-16 flex justify-end relative">
+                  <div class="w-1/2 pr-16 text-left">
+                     <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-black">Four Seasons Lawn Maintenance, Rothesay, NB</h3>
+                        <ul class="list-disc list-outside pl-5 text-gray-700">
+                           <li>Maintained lawns, gardens, and outdoor spaces by mowing, trimming, and planting to enhance curb appeal</li>
+                           <li>Operated landscaping equipment safely and efficiently, ensuring timely completion of tasks in residential and commercial settings</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="absolute left-1/2 transform -translate-x-1/2 top-0 z-10">
+                     <div class="w-24 h-24 bg-blue-400 text-white flex items-center justify-center rounded-full text-m font-bold text-center border-4 border-white shadow-sm">
+                        Landscaper<br />
+                     </div>
+                  </div>
+                  <div class="w-1/2 flex justify-start pl-16 items-start mt-10">
+                     <!-- Increased pl-6 to pl-10 -->
+                     <div class="text-black text-lg font-medium">
+                        May 2022 – August 2022
+                     </div>
+                  </div>
+               </div>
+               <!-- Job 5 - Right -->
+               <div class="mb-16 flex justify-start relative">
+                  <div class="w-1/2 flex justify-end pr-16 items-start mt-10">
+                     <!-- Increased pr-6 to pr-10 -->
+                     <div class="text-black text-lg font-medium">
+                        May 2021 – August 2021            
+                     </div>
+                  </div>
+                  <div class="absolute left-1/2 transform -translate-x-1/2 top-0 z-10">
+                     <div class="w-24 h-24 bg-blue-400 text-white flex items-center justify-center rounded-full text-lg font-bold text-center border-4 border-white shadow-sm">
+                        Junior<br />Engineer<br />
+                     </div>
+                  </div>
+                  <div class="w-1/2 pl-16">
+                     <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-black">Debly Enterprises LTD, Saint John, NB</h3>
+                        <ul class="list-disc list-outside pl-5 text-gray-700">
+                           <li>Reported to Debly’s Head Engineer, assisting with a variety of engineering tasks and construction planning</li>
+                           <li>Primary focus was performing material calculations to develop materials lists for large-scale construction projects in New Brunswick</li>
+                           <li>Analyzed large Excel data sets to track and identify efficient and inefficient material usage</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- Job 6 - Left -->
+               <div class="mb-16 flex justify-end relative">
+                  <div class="w-1/2 pr-16 text-left">
+                     <div class="bg-gray-100 text-black p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-black">CN Lawn Care | Jersey World, Rothesay, NB</h3>
+                        <ul class="list-disc list-outside pl-5 text-gray-700">
+                           <li>Started and operated full-service lawn care business in partnership with a colleague and maintained regular customers throughout the season </li>
+                           <li>Started and successfully operated sports jersey resale business with two colleagues</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="absolute left-1/2 transform -translate-x-1/2 top-0 z-10">
+                     <div class="w-24 h-24 bg-blue-400 text-white flex items-center justify-center rounded-full text-sm font-bold text-center border-4 border-white shadow-sm">
+                        Entrepreneur<br />
+                     </div>
+                  </div>
+                  <div class="w-1/2 flex justify-start pl-16 items-start mt-10">
+                     <!-- Increased pl-6 to pl-10 -->
+                     <div class="text-black text-lg font-medium">
+                        May 2020 – August 2020
+                     </div>
+                  </div>
+               </div>
+               <!-- Repeat same structure for jobs 3 to 6 -->
+               <!-- I've skipped rewriting them here for brevity -->
+            </div>
+         </div>
+      </section>
+      <section id="projects" class="w-full p-8 bg-gray-100 scroll-mt-20">
+         <div class="container max-w-5xl mx-auto px-4">
+            <div class="flex items-center gap-4 mb-6">
+               <i class="fas fa-folder-open text-gray-900 text-4xl"></i>
+               <h2 class="text-3xl font-bold text-gray-900">Projects</h2>
+            </div>
+            <p class="text-gray-700 text-lg mb-6">Below are a few projects that demonstrate my skills and interests:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+               <!-- Project 1 -->
+               <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-black">Coded Blockchain Queries</h3>
+                  <p class="text-gray-700">A blockchain implementation showcasing secure and decentralized data management.</p>
+                  <!-- Flex row for both links -->
+                  <div class="mt-4 flex items-center space-x-6 text-gray-700">
+                     <!-- GitHub Link -->
+                     <div class="flex items-center">
+                        <i class="fab fa-github text-2xl mr-2"></i>
+                        <a href="https://github.com/nalliso1/coded-blockchain-query" class="text-blue-500" target="_blank">View on GitHub</a>
+                     </div>
+                     <!-- PDF Link -->
+                     <div class="flex items-center">
+                        <i class="fas fa-file-pdf text-red-500 text-2xl mr-2"></i>
+                        <a href="images/CS4545_Final_Report.pdf" class="text-blue-500" target="_blank">View Report</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Project 2 -->
+               <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-black">Personal Website</h3>
+                  <p class="text-gray-700">This personal website to showcase my skills, projects, and background.</p>
+                  <div class="mt-4 flex items-center text-gray-700">
+                     <i class="fab fa-github text-2xl mr-2"></i>
+                     <a href="https://github.com/nalliso1/personal-website" class="text-blue-500" target="_blank">View on GitHub</a>
+                  </div>
+               </div>
+               <!-- Project 3 -->
+               <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-black">UNB SUB Game</h3>
+                  <p class="text-gray-700">A game developed as part of a university project, focusing on interactive gameplay.</p>
+                  <div class="mt-4 flex items-center text-gray-700">
+                     <i class="fab fa-github text-2xl mr-2"></i>
+                     <a href="https://github.com/nalliso1/the-cellar-game" class="text-blue-500" target="_blank">View on GitHub</a>
+                  </div>
+               </div>
+               <!-- Project 4 -->
+               <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-black">Event Management System</h3>
+                  <p class="text-gray-700">A system designed to streamline event planning and management processes.</p>
+                  <div class="mt-4 flex items-center text-gray-700">
+                     <i class="fab fa-github text-2xl mr-2"></i>
+                     <a href="https://github.com/nalliso1/event-management-system" class="text-blue-500" target="_blank">View on GitHub</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="contact" class="w-full p-8 bg-white scroll-mt-20">
+         <div class="container max-w-4xl mx-auto px-4 flex flex-wrap gap-8">
+            <!-- Contact Info -->
+            <div class="w-full md:w-[48%]">
+               <h2 class="text-2xl font-bold mb-4">Contact</h2>
+               <!-- Only this div has gray background -->
+               <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                  <div class="flex items-center mb-4">
+                     <i class="fas fa-envelope text-gray-700 text-2xl mr-4"></i>
+                     <p class="text-gray-700">
+                        Email: <a href="mailto:nalliso1@unb.ca" class="text-blue-500">nalliso1@unb.ca</a>
+                     </p>
+                  </div>
+                  <div class="flex items-center mb-4">
+                     <i class="fas fa-phone text-gray-700 text-2xl mr-4"></i>
+                     <p class="text-gray-700">
+                        Phone: <a href="tel:+15066540128" class="text-blue-500">+1 (506) 654-0128</a>
+                     </p>
+                  </div>
+                  <div class="flex items-center mb-4">
+                     <i class="fab fa-linkedin text-gray-700 text-2xl mr-4"></i>
+                     <p class="text-gray-700">
+                        LinkedIn: <a href="https://www.linkedin.com/in/nick-allison-297138265/" class="text-blue-500" target="_blank">Nick Allison</a>
+                     </p>
+                  </div>
+                  <div class="flex items-center">
+                     <i class="fab fa-github text-gray-700 text-2xl mr-4"></i>
+                     <p class="text-gray-700">
+                        GitHub: <a href="https://github.com/nalliso1" class="text-blue-500" target="_blank">nalliso1</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- Message Form -->
+            <div class="w-full md:w-[48%] bg-gray-100 p-6 rounded-lg shadow-md">
+               <h2 class="text-xl font-bold mb-4">Send Me a Message</h2>
+               <form action="https://formspree.io/f/mjkwpayy" method="POST">
+                  <div class="mb-4">
+                     <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                     <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 rounded-lg" required />
+                  </div>
+                  <div class="mb-4">
+                     <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                     <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 rounded-lg" required />
+                  </div>
+                  <div class="mb-4">
+                     <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                     <textarea id="message" name="message" rows="5" class="w-full border border-gray-300 p-2 rounded-lg" required></textarea>
+                  </div>
+                  <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                  Send
+                  </button>
+               </form>
+            </div>
+         </div>
+      </section>
 
+      <footer class="bg-gray-100 text-black text-center py-4">
+         <p class="text-sm">
+             © 2025 Nick Allison. Built with HTML, Tailwind CSS & JavaScript.
+         </p>
+      </footer>
 
-
-
-    <section id="projects" class="w-full p-8 bg-gray-100 scroll-mt-20">
-  <div class="container max-w-4xl mx-auto px-4">
-    <div class="flex items-center gap-4 mb-6">
-      <i class="fas fa-folder-open text-gray-900 text-4xl"></i>
-      <h2 class="text-3xl font-bold text-gray-900">Projects</h2>
-    </div>
-    <p class="text-gray-700 text-lg mb-6">Here are some of the projects I have worked on:</p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      
-      <!-- Project 1 -->
-<div class="bg-white p-6 rounded-lg shadow-md">
-  <h3 class="text-xl font-semibold text-black">Coded Blockchain Queries</h3>
-  <p class="text-gray-700">A blockchain implementation showcasing secure and decentralized data management.</p>
-
-  <!-- Flex row for both links -->
-  <div class="mt-4 flex items-center space-x-6 text-gray-700">
-    
-    <!-- GitHub Link -->
-    <div class="flex items-center">
-      <i class="fab fa-github text-2xl mr-2"></i>
-      <a href="https://github.com/nalliso1/coded-blockchain-query" class="text-blue-500" target="_blank">View on GitHub</a>
-    </div>
-
-    <!-- PDF Link -->
-    <div class="flex items-center">
-      <i class="fas fa-file-pdf text-red-500 text-2xl mr-2"></i>
-      <a href="images/CS4545_Final_Report.pdf" class="text-blue-500" target="_blank">View Report</a>
-    </div>
-
-  </div>
-</div>
-
-
-      <!-- Project 2 -->
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-semibold text-black">Personal Website</h3>
-        <p class="text-gray-700">This personal website to showcase my skills, projects, and background.</p>
-        <div class="mt-4 flex items-center text-gray-700">
-          <i class="fab fa-github text-2xl mr-2"></i>
-          <a href="https://github.com/nalliso1" class="text-blue-500" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-semibold text-black">UNB SUB Game</h3>
-        <p class="text-gray-700">A game developed as part of a university project, focusing on interactive gameplay.</p>
-        <div class="mt-4 flex items-center text-gray-700">
-          <i class="fab fa-github text-2xl mr-2"></i>
-          <a href="https://github.com/nalliso1/the-cellar-game" class="text-blue-500" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-semibold text-black">Event Management System</h3>
-        <p class="text-gray-700">A system designed to streamline event planning and management processes.</p>
-        <div class="mt-4 flex items-center text-gray-700">
-          <i class="fab fa-github text-2xl mr-2"></i>
-          <a href="https://github.com/nalliso1/event-management-system" class="text-blue-500" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-    <section id="contact" class="w-full p-8 bg-white scroll-mt-20">
-  <div class="container max-w-4xl mx-auto px-4 flex flex-wrap gap-8">
-    
-    <!-- Contact Info -->
-    <div class="w-full md:w-[48%]">
-      <h2 class="text-2xl font-bold mb-4">Contact</h2>
-
-      <!-- Only this div has gray background -->
-      <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-        <div class="flex items-center mb-4">
-          <i class="fas fa-envelope text-gray-700 text-2xl mr-4"></i>
-          <p class="text-gray-700">
-            Email: <a href="mailto:nalliso1@unb.ca" class="text-blue-500">nalliso1@unb.ca</a>
-          </p>
-        </div>
-        <div class="flex items-center mb-4">
-          <i class="fas fa-phone text-gray-700 text-2xl mr-4"></i>
-          <p class="text-gray-700">
-            Phone: <a href="tel:+15066540128" class="text-blue-500">+1 (506) 654-0128</a>
-          </p>
-        </div>
-        <div class="flex items-center mb-4">
-          <i class="fab fa-linkedin text-gray-700 text-2xl mr-4"></i>
-          <p class="text-gray-700">
-            LinkedIn: <a href="https://www.linkedin.com/in/nick-allison-297138265/" class="text-blue-500" target="_blank">Nick Allison</a>
-          </p>
-        </div>
-        <div class="flex items-center">
-          <i class="fab fa-github text-gray-700 text-2xl mr-4"></i>
-          <p class="text-gray-700">
-            GitHub: <a href="https://github.com/nalliso1" class="text-blue-500" target="_blank">nalliso1</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Message Form -->
-    <div class="w-full md:w-[48%] bg-gray-100 p-6 rounded-lg shadow-md">
-      <h2 class="text-xl font-bold mb-4">Send Me a Message</h2>
-      <form action="https://formspree.io/f/mjkwpayy" method="POST">
-        <div class="mb-4">
-          <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
-          <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 rounded-lg" required />
-        </div>
-        <div class="mb-4">
-          <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
-          <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 rounded-lg" required />
-        </div>
-        <div class="mb-4">
-          <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
-          <textarea id="message" name="message" rows="5" class="w-full border border-gray-300 p-2 rounded-lg" required></textarea>
-        </div>
-        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
-          Send
-        </button>
-      </form>
-    </div>
-  </div>
-</section>
-
-
-
-  </body>
+   </body>
 </html>
