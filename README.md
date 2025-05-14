@@ -1,8 +1,6 @@
-# Nick Allison - Person Website
+# Nick Allison - Personal Website
 
 🌐 **Live Site:** [nickallison.me](https://nickallison.me/)
-
----
 
 ## 📷 Preview
 
