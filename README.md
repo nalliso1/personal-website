@@ -1,10 +1,20 @@
-# personal-website
-This is my personal website to showcase my skills, education, and experience
+# Nick Allison - Person Website
 
-# Check it out here:
-https://nickallison.me/
+🌐 **Live Site:** [nickallison.me](https://nickallison.me/)
 
-Overview
+---
 
-Photo:
+## 👤 About
 
+Built with **HTML**, **Tailwind CSS**, and **JavaScript**, this site is designed as a digital resume and personal brand hub. It includes:
+
+- Responsive design
+- Project showcase with GitHub links
+- Contact form powered by [Formspree](https://formspree.io/)
+- Custom domain with GitHub Pages
+
+---
+
+## 📷 Preview
+
+![Website Screenshot](images/websitePhoto.png)
